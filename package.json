@@ -33,7 +33,7 @@
     }
   },
   "dependencies": {
-    "@moltin/request": "1.5.3",
+    "@moltin/request": "1.6.0",
     "aws-sdk": "^2.437.0",
     "micro": "^9.3.3",
     "micro-cors": "^0.1.1",
