@@ -1,0 +1,53 @@
+{
+  "name": "@particular./sync-moltin-to-shippo",
+  "version": "0.0.0-semantic-release",
+  "author": "Adam Grohs <info@uniquelyparticular.com> (https://uniquelyparticular.com)",
+  "owner": "Particular.",
+  "description": "Please contact Particular. via info@uniquelyparticular.com for any questions",
+  "keywords": [
+    "moltin",
+    "shippo",
+    "webhooks",
+    "microservices",
+    "shipping",
+    "ecommerce",
+    "integration",
+    "particular",
+    "particular."
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/uniquelyparticular/sync-moltin-to-shippo#readme",
+  "repository": "github:uniquelyparticular/sync-moltin-to-shippo",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "micro-dev",
+    "precommit": "pretty-quick --staged",
+    "start": "micro",
+    "clean-install": "yarn install --force",
+    "test": "jest --passWithNoTests",
+    "semantic-release": "semantic-release"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "@moltin/request": "1.5.3",
+    "aws-sdk": "^2.437.0",
+    "micro": "^9.3.3",
+    "micro-cors": "^0.1.1",
+    "shippo": "^1.3.1"
+  },
+  "devDependencies": {
+    "husky": "1.3.1",
+    "jest": "^24.7.1",
+    "micro-dev": "3.0.0",
+    "prettier": "1.16.4",
+    "pretty-quick": "1.10.0",
+    "semantic-release": "^15.13.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
