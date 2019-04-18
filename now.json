@@ -1,6 +1,6 @@
 {
-  "name": "demo-sync-moltin-to-zendesk",
-  "alias": "particular-demo-sync-moltin-to-zendesk.now.sh",
+  "name": "demo-sync-moltin-to-shippo",
+  "alias": "particular-demo-sync-moltin-to-shippo.now.sh",
   "env": {
     "NODE_ENV": "production",
     "MOLTIN_CLIENT_ID": "@demo-moltin-client-id",
