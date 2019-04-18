@@ -1,7 +1,7 @@
 const { json, send } = require('micro')
 const shippo = require('shippo')(process.env.SHIPPO_PRIVATE_KEY)
-const AWS = require('aws-sdk')
 const { createClient } = require('@moltin/request')
+const AWS = require('aws-sdk')
 const SES = new AWS.SES({
   accessKeyId: process.env.AMAZON_ACCESS_KEY_ID,
   secretAccessKey: process.env.AMAZON_SECRET_ACCESS_KEY,
